@@ -12,6 +12,12 @@ public class SortableObjectArray implements Sortable{
 	
 	public void sort(){Arrays.sort(this.array);}
 	
-	public Object get(int index){return array[index];}
+	public Object get(int index){return this.array[index];}
 	
+	public void set(int index, Object value){this.array[index] = value;}
+	
+	@Override
+	public String toString(){
+		return Arrays.toString(this.array);
+	}
 }
